@@ -1,0 +1,42 @@
+
+$secondary: #FA5959;
+$primary:   #5265E1;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 540px,
+  lg: 991px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+.imagen{
+    background-image: url(./Imagenes/Fondo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 10em;
+    background-position-x: 15em;
+    
+}
+
+
+@media (max-width: 991px){
+    .logo{
+        width: 50%;
+    }
+    #col_1{
+        justify-content: center;
+        text-align:center;
+    }
+    .imagen{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 5em;
+        background-position-x: 10em;
+    }
+
+    
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
