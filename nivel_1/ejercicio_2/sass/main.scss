@@ -1,0 +1,107 @@
+
+$secondary: #FA5959;
+$primary:   #5265E1;
+
+ $container-max-widths: (
+    sm: 540px,
+    md: 768px,
+    lg: 991px,
+    xl: 1140px,
+    xxl: 1320px
+);
+
+.imagen{
+    background-image: url(./Imagenes/Fondo-EJ1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 10em;
+    background-position-x: 15em;
+    
+}
+
+
+
+/*FIN DEL EJERCICIO 1*/
+
+$nav-tabs-link-active-border-color: #ffffff;
+
+#myTab button.active {
+     border-bottom: solid 3px #FA5959; 
+     color: black; 
+     font-weight: 500;
+}
+
+#myTab button{
+    color: #adb5bd;
+    font-weight: 500;
+}
+
+.imagen_2{
+    background-image: url(./Imagenes/Fondo-EJ2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 5em;
+    background-position-x: -9.5em; 
+}
+.para_b2{
+    color: #adb5bd;
+    font-weight: 500;
+}
+
+@media (max-width: 991px){
+    .logo{
+        width: 50%;
+    }
+    #col_1{
+        justify-content: center;
+        text-align:center;
+    }
+    .imagen{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 5em;
+        background-position-x: 10em;
+    }
+    .imagen_2{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: 5em;
+        background-position-x: -5em; 
+        padding-bottom: 3em;
+    }
+    #bloque_2   #col_1{
+        justify-content: center;
+        text-align:center;
+        width: 100%;
+        margin:auto;
+    }
+
+}
+@media (max-width: 540px){
+
+    #myTab{
+        flex-wrap: wrap;
+        width:100%;
+        border-bottom: 0.1px rgb(189, 186, 186) solid; 
+    
+    }
+    .nav-item{
+        width: 100%;
+        display: flex;
+        border-top: 0.1px rgb(189, 186, 186) solid;
+
+    }
+    #myTab button{
+        // margin-left: 9em;
+        margin: auto;  
+    }
+    #myTab #profile-tab{
+         margin: auto;
+    }
+    #myTab #contact-tab{
+        margin: auto;
+    }
+ 
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
